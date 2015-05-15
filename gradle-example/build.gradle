@@ -25,7 +25,6 @@ import java.text.SimpleDateFormat
 def globalVersion = new Version(currentVersion)
 
 allprojects {
-  apply plugin: 'com.jfrog.artifactory-upload'
 
   apply plugin: 'idea'
   configure(subprojects.findAll { new File(it.projectDir, 'src').directory }) {
